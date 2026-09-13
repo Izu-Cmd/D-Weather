@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D-Weather</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>D-Weather</h1>
+      <p class="tagline">Clean weather, no fluff.</p>
+    </header>
+
+    <section class="search">
+      <input id="cityInput" type="text" placeholder="Enter a city (e.g. Lagos)" autocomplete="off" />
+      <button id="searchBtn" type="button">Search</button>
+    </section>
+
+    <main class="weather-card" id="weatherCard" hidden>
+      <div class="location">
+        <h2 id="cityName">—</h2>
+        <p id="countryName">—</p>
+      </div>
+      <div class="temperature">
+        <span id="tempValue">—</span><span class="unit">°C</span>
+      </div>
+      <div class="condition">
+        <p id="conditionText">—</p>
+      </div>
+      <div class="meta">
+        <div class="meta-item"><span>Feels like</span><strong id="feelsLike">—</strong></div>
+        <div class="meta-item"><span>Humidity</span><strong id="humidity">—</strong></div>
+        <div class="meta-item"><span>Wind</span><strong id="wind">—</strong></div>
+      </div>
+    </main>
+
+    <p id="status" class="status"></p>
+
+    <footer>
+      <p>Data from <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
